@@ -2,9 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>contract</title>
+    <link rel="stylesheet" href="../furama.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Customer</a>
+                </li>
+                </li>
+                <li class="nav-item dropdown">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Employee</a>
+                </li>
+                </li>
+
+                <li class="nav-item dropdown">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Contract</a>
+                </li>
+                </li>
+
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
 <h1 class="text-center" style="color:crimson">Create Contract</h1>
 <a class="btn btn-primary mb-2 ml-4" [routerLink]="'/contract-list'" role="button">Contract list</a>
 
