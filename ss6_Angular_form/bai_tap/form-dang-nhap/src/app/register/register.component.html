@@ -1,0 +1,68 @@
+<p>register-component works!</p>
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+  <div class="mb-3 row">
+    <label class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" formControlName="email">
+    </div>
+  </div>
+  <p style="color: red" *ngIf="registerForm.controls.email.hasError('required')
+   && registerForm.controls.email.dirty">Mời bạn nhập email</p>
+  <p style="color: red" *ngIf="registerForm.controls.email.hasError('email')
+   && registerForm.controls.email.dirty">Mời bạn nhập theo đúng mẫu</p>
+  <div class="mb-3 row">
+    <label class="col-sm-2 col-form-label">Country</label>
+    <div class="col-sm-10">
+      <!--      <input type="text" class="form-control" formControlName="country">-->
+      <select formControlName="country">
+        <option *ngFor="let c of countryList" [ngValue]="c" > {{c.country}}</option>
+      </select>
+    </div>
+  </div>
+  <div class="mb-3 row">
+    <label class="col-sm-2 col-form-label">Age</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" formControlName="age">
+    </div>
+  </div>
+  <p style="color: red" *ngIf="registerForm.controls.age.hasError('min')
+   && registerForm.controls.age.dirty">số tuổi phải lớn hơn 18</p>
+  <div class="mb-3 row">
+    <label class="col-sm-2 col-form-label">Gender</label>
+    <div class="col-sm-10">
+      <!--      <input type="text" class="form-control" formControlName="country">-->
+      <select formControlName="gender">
+        <option value="male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+    </div>
+  </div>
+  <p style="color: red" *ngIf="registerForm.controls.gender.hasError('required')
+   && registerForm.controls.gender.dirty">Mời bạn chọn giới tính</p>
+  <div class="mb-3 row">
+    <label class="col-sm-2 col-form-label">Phone</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" formControlName="phone">
+    </div>
+  </div>
+  <div *ngIf="!registerForm.controls.phone.valid && (registerForm.controls.phone.dirty||registerForm.controls.phone.touched)">
+  </div>
+  <p style="color: red" *ngIf="registerForm.controls.phone.hasError('pattern')
+   && registerForm.controls.phone.dirty">Mời bạn nhập theo đúng mẫu (+84xxxxxxxxx)</p>
+  <div class="mb-3 row" formGroupName="pwPassword">
+    <label class="col-sm-2 col-form-label">Password</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" formControlName="password">
+    </div>
+    <label class="col-sm-2 col-form-label">confirmPassword</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" formControlName="confirmPassword">
+    </div>
+  </div>
+  <p style="color: red" *ngIf="registerForm.controls.pwPassword.hasError('abc')
+   && registerForm.controls.pwPassword.dirty">Mời bạn nhập đúng Password và confirmPassword </p>
+  <div>
+    <button [disabled]="!registerForm.valid" >Register</button>
+  </div>
+
+</form>
