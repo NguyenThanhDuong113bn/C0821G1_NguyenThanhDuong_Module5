@@ -1,0 +1,112 @@
+{
+  "customers": [
+    {
+      "id": 6,
+      "name": "Nguyen Van A",
+      "email": "a@gmail.com",
+      "address": "Hai Phong ",
+      "phone": "0935123456",
+      "idCard": "123787895",
+      "gender": "Man",
+      "birthDay": "1995-12-10",
+      "codeNumber": "KH-0001",
+      "customerType": "Platinium"
+    },
+    {
+      "name": "Nguyen Thi Sao Mai",
+      "email": "saomai@gmail.com",
+      "address": "Ho Chi Minh",
+      "phone": "+849035545654",
+      "idCard": "102312789987",
+      "gender": "Woman",
+      "birthDay": "1998-10-10",
+      "codeNumber": "KH-0002",
+      "customerType": "Platinium",
+      "id": 7
+    },
+    {
+      "name": "Nguyen Anh Kiet",
+      "email": "a@gmail.com",
+      "address": "Da Nang",
+      "phone": "+84958456546",
+      "idCard": "123456789548",
+      "gender": "Man",
+      "birthDay": "1995-10-18",
+      "codeNumber": "KH-1245",
+      "customerType": "Diamond",
+      "id": 8
+    },
+    {
+      "name": "Nguyen Van Binh",
+      "email": "binh@gmail.com",
+      "address": "Ha Nam",
+      "phone": "+849025567678",
+      "idCard": "120345698356",
+      "gender": "Man",
+      "birthDay": "1991-10-25",
+      "codeNumber": "KH-1234",
+      "customerType": "Silver",
+      "id": 9
+    },
+    {
+      "name": "Nguyen Thi Thu",
+      "email": "thu@gmail.com",
+      "address": "DN",
+      "phone": "+8492525256565",
+      "idCard": "1234568878992",
+      "gender": "Woman",
+      "birthDay": "2000-10-10",
+      "codeNumber": "KH-1258",
+      "customerType": "Platinium",
+      "id": 10
+    },
+    {
+      "name": "Nguyen Thi Thu Hoai",
+      "email": "thuhoai@gmail.com",
+      "address": "Hue",
+      "phone": "+84912584698",
+      "idCard": "120256958777",
+      "gender": "Woman",
+      "birthDay": "1992-10-20",
+      "codeNumber": "KH-1698",
+      "customerType": "Platinium",
+      "id": 11
+    },
+    {
+      "name": null,
+      "email": null,
+      "address": null,
+      "phone": null,
+      "idCard": null,
+      "gender": "Man",
+      "birthDay": null,
+      "codeNumber": null,
+      "customerType": null,
+      "id": 12
+    },
+    {
+      "name": "Nguyễn Thành Dương",
+      "email": "1",
+      "address": "1",
+      "phone": "3789456",
+      "idCard": "1",
+      "gender": "Man",
+      "birthDay": null,
+      "codeNumber": null,
+      "customerType": "Diamond",
+      "id": 13
+    },
+    {
+      "name": "Nguyễn Thành Dương",
+      "email": "abc123@gmail.com",
+      "address": "aaaaaa",
+      "phone": "3789456",
+      "idCard": "12",
+      "gender": "Man",
+      "birthDay": "3",
+      "codeNumber": "2",
+      "customerType": "Gold",
+      "id": 14
+    }
+  ]
+}

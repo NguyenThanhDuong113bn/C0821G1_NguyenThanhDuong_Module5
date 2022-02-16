@@ -1,0 +1,49 @@
+<button type="button"  routerLink="/customer/create">
+  Create
+</button>
+<table class="table table-striped w-50.5 mx-auto">
+
+  <thead class="thead-inverse">
+  <tr>
+
+    <th>ID</th>
+    <th>Name</th>
+    <th>Code Number</th>
+    <th>Birth Day</th>
+    <th>Gender</th>
+    <th>Id Card</th>
+    <th>Phone</th>
+    <th>Email</th>
+    <th>Address</th>
+    <th>Customer Type</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let customer of customers">
+    <td>{{customer.id}}</td>
+    <td>{{customer.name}}</td>
+    <td>{{customer.codeNumber}}</td>
+    <td>{{customer.birthDay}}</td>
+    <td>{{customer.gender}}</td>
+    <td>{{customer.idCard}}</td>
+    <td>{{customer.phone}}</td>
+    <td>{{customer.email}}</td>
+    <td>{{customer.address}}</td>
+    <td>{{customer.customerType}}</td>
+    <td>
+      <button type="button" class="btn btn-danger btn-delete" data-toggle="modal"
+              data-target="#deleteModal">
+        Delete
+      </button>
+    </td>
+    <td>
+      <button type="button" class="btn btn-primary btn-view" data-toggle="modal" data-target="#deditModal">
+        Edit
+      </button>
+
+
+    </td>
+
+  </tr>
+  </tbody>
+</table>
