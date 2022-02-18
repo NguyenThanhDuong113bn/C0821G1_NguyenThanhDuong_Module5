@@ -1,4 +1,4 @@
-<button type="button"  routerLink="/customer/create">
+<button type="button" routerLink="/customer/create">
   Create
 </button>
 <table class="table table-striped w-50.5 mx-auto">
@@ -19,7 +19,7 @@
   </tr>
   </thead>
   <tbody>
-  <tr *ngFor="let customer of customers">
+  <tr *ngFor="let customer of customers | paginate :{itemsPerPage:2,currentPage:p}">
     <td>{{customer.id}}</td>
     <td>{{customer.name}}</td>
     <td>{{customer.codeNumber}}</td>
@@ -31,19 +31,18 @@
     <td>{{customer.address}}</td>
     <td>{{customer.customerType}}</td>
     <td>
-      <button type="button" class="btn btn-danger btn-delete" data-toggle="modal"
-              data-target="#deleteModal">
-        Delete
+      <button routerLink="/customer/delete/{{customer.id}}" class="btn btn-danger btn-delete"  >
+        <i class="fas fa-trash"></i>
       </button>
     </td>
     <td>
-      <button type="button" class="btn btn-primary btn-view" data-toggle="modal" data-target="#deditModal">
-        Edit
+      <button routerLink="/customer/edit/{{customer.id}}" class="btn btn-primary btn-view">
+        <i class="fas fa-edit"></i>
       </button>
-
-
     </td>
-
   </tr>
   </tbody>
+
 </table>
+
+<pagination-controls (pageChange)="p=$event"></pagination-controls>

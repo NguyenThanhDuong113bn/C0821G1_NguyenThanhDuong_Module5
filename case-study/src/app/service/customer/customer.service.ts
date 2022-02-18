@@ -28,4 +28,6 @@ export class CustomerService {
   delete(id: number) {
     return this.httpClient.delete<Customer>(`${API_URL}/customers/${id}`);
   }
+
+
 }
